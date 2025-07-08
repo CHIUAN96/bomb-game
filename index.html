@@ -1,0 +1,30 @@
+﻿<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <title>數字炸彈遊戲</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>~數字炸彈遊戲~</h1>
+    <p>炸彈數字在 <span id="min">1</span> ~ <span id="max">100</span>，你能避開嗎？</p>
+    <input type="number" id="guessInput" placeholder="請輸入數字,並按下右方點火!" />
+    <button class="bomb-btn" onclick="guess()">點火!!！</button>
+    <p id="result"></p>
+    <p>猜過的數字有：<span id="history"></span></p>
+    <button id="restartBtn" onclick="location.reload()">重新開始</button>
+    <audio id="bgm" src="back.m4a" loop></audio>
+    <audio id="dieSound" src="bomb.mp3"></audio>
+    <div class="corner-text">CHIUAN</div>
+    <script>
+        document.body.addEventListener('click', function () {
+            var audio = document.getElementById('bgm');
+            if (audio.paused) {
+                audio.play();
+            }
+        });
+    </script>
+    <script src="game.js"></script>
+
+</body>
+</html>

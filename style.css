@@ -1,0 +1,120 @@
+﻿html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: sans-serif;
+    text-align: center;
+    background-image: url('background4.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+}
+
+input {
+    font-size: 25px;
+    padding: 15px;
+    background: rgba(255,255,255,0.5); /* 半透明白色 */
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(44,62,80,0.10);
+}
+
+button {
+    width: 65px;              /* 根據圖片大小調整 */
+    height: 65px;             /* 根據圖片大小調整 */
+    padding: 1px;
+    margin-left: 4px;
+    background-image: url('bomb.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    border: none;
+    color: transparent;       /* 隱藏文字 */
+    font-size: 0;             /* 隱藏文字 */
+    outline: none;            /* 移除點擊時的外框 */
+    cursor: pointer;          /* 滑鼠移過時顯示手型 */
+}
+
+#result {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+h1 {
+    font-size: 2.5em;
+    color: #fff;
+    text-shadow: 2px 2px 8px #2c3e50;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+}
+
+p {
+    font-size: 1.5em;
+    color: #fff;
+    text-shadow: 1px 1px 4px #2c3e50;
+    margin-bottom: 16px;
+}
+
+
+
+#guessInput::placeholder {
+    font-size: 0.9em; /* 或 16px，依需求調整 */
+}
+
+#restartBtn {
+    width: auto !important;
+    height: auto !important;
+    padding: 12px 32px !important;
+    margin: 24px auto 0 auto !important; /* 置中 */
+    background: #fff !important;
+    color: #808080 !important;
+    font-size: 1.2em !important;
+    font-weight: bold !important;
+    border: none !important;
+    border-radius: 8px !important;
+    box-shadow: 1px 2px 8px rgba(44,62,80,0.15) !important;
+    cursor: pointer !important;
+    transition: background 0.2s, color 0.2s !important;
+    background-image: none !important;
+    display: block !important; /* 讓按鈕獨占一行並可置中 */
+}
+
+#restartBtn:hover {
+    background: #4a78b5 !important;
+    color: #808080 !important;
+}
+
+.bomb-btn {
+    width: 65px;
+    height: 65px;
+    padding: 1px;
+    margin-left: 4px;
+    background-image: url('bomb.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    border: none;
+    color: transparent;
+    font-size: 0;
+    outline: none;
+    cursor: pointer;
+}
+
+.corner-text {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    color: #fff;
+    font-size: 1.2em;
+    opacity: 0.7;
+    letter-spacing: 2px;
+    z-index: 1000;
+    pointer-events: none; /* 不影響點擊 */
+}
+
+
+
