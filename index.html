@@ -18,10 +18,10 @@
     <div class="corner-text">CHIUAN</div>
     <script>
         document.getElementById('guessInput').addEventListener('keydown', function (event) {
-            if (event.key === 'Enter') {
-                guess();
-            }
-        });
+        if (event.key === 'Enter') {
+            guess(); // 呼叫點火函數
+        }
+    });
         document.body.addEventListener('click', function () {
             var audio = document.getElementById('bgm');
             if (audio.paused) {
@@ -33,4 +33,5 @@
 
 </body>
 </html>
+
 
